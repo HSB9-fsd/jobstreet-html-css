@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content .last-history .card-carousel .card {
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+}
+.main-content .last-history .card-carousel .card:hover {
+  box-shadow: 0 0 5px rgba(101, 101, 101, 0.5);
+  transition: all ease-in-out 0.3s;
+}
+
+.footer select,
+.footer a,
+.main-content .last-history .card-title a,
+.navigation .list-items a {
+  transition: all ease-in-out 0.3s;
+}
+.footer select:hover,
+.footer a:hover,
+.main-content .last-history .card-title a:hover,
+.navigation .list-items a:hover {
+  color: #000;
+  border-bottom: 1px solid #656565;
+  transition: all ease-in-out 0.3s;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 90px;
+  padding: 0 25px;
+}
+.navigation .menu {
+  display: none;
+}
+.navigation .left-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.navigation .logo {
+  margin-right: 10px;
+}
+.navigation .logo h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.navigation .list-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+}
+.navigation .list-items a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #656565;
+  padding: 10px;
+}
+.navigation .right-side .fa-solid {
+  color: #656565;
+}
+.navigation .right-side select {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #656565;
+  padding: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+.navigation .right-side .register {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #4964e9;
+  padding: 8px;
+  border-radius: 5px;
+  color: #4964e9;
+  margin: 0 10px;
+}
+.navigation .right-side .register:hover {
+  background-color: rgba(73, 100, 233, 0.2);
+}
+.navigation .right-side .company {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  color: #4964e9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 280px;
+  background-image: url(../images/1191197.jpg);
+  background-size: cover;
+}
+.container .box {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  width: 95%;
+  height: 200px;
+}
+.container .box h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.container .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  overflow: hidden;
+  gap: 10px;
+}
+.container .cards button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 0;
+  width: 20%;
+  border-radius: 4px;
+  border: none;
+  background-color: #e60278;
+  transition: all ease-in-out 0.3s;
+}
+.container .cards button:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #fe128c;
+}
+.container .cards .card {
+  width: 90%;
+  display: flex;
+}
+.container .cards .card input,
+.container .cards .card select {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #656565;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  padding: 2% 0;
+  border-radius: 0 4px 4px 0;
+}
+.container .cards .card span {
+  padding: 2% 10px;
+  background-color: #fff;
+  border-radius: 4px 0 0 4px;
+}
+
+.searching-histories {
+  height: 100px;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.searching-histories .items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 90%;
+  margin: 0 auto;
+}
+.searching-histories .items h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  width: 250px;
+  border-right: 2px solid #f7f8fb;
+}
+.searching-histories .items .item {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  width: 250px;
+  border-right: 1px solid #f7f8fb;
+}
+.searching-histories .items .item .caption {
+  color: #000;
+  font-weight: 400;
+}
+.searching-histories .items .item a {
+  text-decoration: none;
+  display: block;
+  color: #4964e9;
+}
+.searching-histories .items .item a span {
+  font-weight: 600;
+  color: #12784f;
+}
+.searching-histories .items .item:nth-child(3) {
+  border: none;
+}
+
+.main-content {
+  background-color: #f7f8fb;
+  overflow: hidden;
+}
+.main-content .recommendation {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-top: 50px;
+}
+.main-content .recommendation .recomen-title {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 90%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.main-content .recommendation .card-register {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 15px;
+  gap: 3px;
+  text-align: center;
+}
+.main-content .recommendation .card-register p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #656565;
+}
+.main-content .recommendation .card-register p a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #4964e9;
+  text-decoration: none;
+}
+.main-content .last-history {
+  width: 90%;
+  margin: 20px auto;
+  overflow: auto;
+}
+.main-content .last-history .card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: streach;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-content .last-history .card-title h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+.main-content .last-history .card-title a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #4964e9;
+  text-decoration: none;
+}
+.main-content .last-history .card-carousel {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: row;
+  width: 100vw;
+  margin-top: 20px;
+  padding: 3px 0;
+  gap: 10px;
+}
+.main-content .last-history .card-carousel .card {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  width: 300px !important;
+  height: 230px;
+  padding: 0 15px;
+  background-color: #fff;
+  border-left: 5px solid #512eaa;
+  border-radius: 4px;
+}
+.main-content .last-history .card-carousel .card .anoun {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 15%;
+  text-align: center;
+  background-color: #12784f;
+  color: #fff;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+.main-content .last-history .card-carousel .card .caption-1 {
+  margin: 10px 0;
+}
+.main-content .last-history .card-carousel .card .caption-1 a {
+  text-decoration: none;
+}
+.main-content .last-history .card-carousel .card .caption-1 a h6 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4964e9;
+}
+.main-content .last-history .card-carousel .card .caption-1 a p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 4;
+  color: #656565;
+}
+.main-content .last-history .card-carousel .caption-2 {
+  margin: 10px 0;
+}
+.main-content .last-history .card-carousel .caption-2 a {
+  text-decoration: none;
+}
+.main-content .last-history .card-carousel .caption-2 a p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+}
+.main-content .last-history .card-carousel span {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #656565;
+}
+.main-content .company-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #2b2b2b;
+  width: 90%;
+  margin: 10px auto;
+}
+.main-content .companies {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: streach;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  gap: 10px;
+}
+.main-content .left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.main-content .left-side .box {
+  width: 220px;
+}
+.main-content .right-side .box {
+  width: 300px;
+}
+.main-content .left-side img {
+  width: 90%;
+}
+.main-content .right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-content .right-side img {
+  width: 100%;
+}
+.main-content .banner {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  width: 90%;
+  margin: 20px auto;
+}
+.main-content .banner img {
+  width: 90%;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  margin: 20px 30px;
+}
+.footer .item-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-bottom: 10px;
+}
+.footer .more-information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  height: 90px;
+  margin-top: 10px;
+}
+.footer .more-information select {
+  width: 100px;
+}
+.footer .more-information .privasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.footer .more-information .privasi ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.footer h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin: 5px 0;
+}
+.footer ul,
+.footer a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+  color: #656565;
+  transition: all ease-in-out 0.3s;
+}
+.footer li {
+  padding: 8px 0;
+}
+.footer select {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #656565;
+  padding: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 1140px) {
+  .navigation .left-side {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navigation .list-items {
+    display: none;
+  }
+  .searching-histories .items h3 {
+    width: 100%;
+    border: none;
+  }
+  .searching-histories .items .item {
+    display: none;
+  }
+  .companies {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container .cards {
+    flex-direction: column;
+  }
+  .container .cards button {
+    display: none;
+  }
+  .main-content .recommendation span {
+    margin: 8px auto;
+  }
+  .main-content .banner {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navigation {
+    flex-direction: row-reverse;
+  }
+  .navigation .menu {
+    display: contents;
+  }
+  .navigation .menu select {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #656565;
+    border: none;
+  }
+  .navigation .right-side {
+    display: none;
+  }
+  .companies {
+    flex-wrap: wrap;
+  }
+  .companies .left-side .box {
+    width: 120px;
+  }
+  .companies .right-side .box {
+    width: 100%;
+  }
+} /*# sourceMappingURL=style.css.map */
