@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/logo_title.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>   
+    <title>Pasang Iklan Lowongan Kerja Gratis | JobStreet untuk Perusahaan | JobStreet Employer Indonesia</title>
+
+    <script>
+        tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#0d3880',
+        }
+      }
+    }
+  }
+    </script>
+</head>
+<body>
+    <header class="z-[1050] bg-white fixed w-full box-border transform-none transition-all duration-0 ease-in-out shadow-lg h-16 pt-3">
+        <div class="mx-[8px] flex justify-between md:mx-[100px] lg:mx-[175px]">
+            <div class="flex items-center">
+                <input type="checkbox" id="hamburger" class="hidden">
+                <label for="hamburger" class="mr-8 mb-8 px-[10px] lg:hidden cursor-pointer" id="hamburger">
+                    <i class="fa-solid fa-bars text-[#cfcfcf] text-3xl fixed" id="btn"></i>
+                </label>
+                <div class="inline">
+                    <a href="/"><img src="/assets/images/logo.png" alt="Logo" width="200px"></a>
+                </div>
+                <button class="relative mx-4 py-[10px] px-[15px] text-sm text-primary hover:bg-[#f9f9f9] leading-5 hidden group lg:block">
+                    <span class="text-sm">Bahasa <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="absolute bg-white py-[5px] w-[160px] border border-[#e5e5e5] shadow-2xl hidden group-focus:block">
+                        <ul class="text-sm text-left list-none">
+                            <li class="py-[10px] px-[22px] hover:bg-[#e5e5e5]">Bahasa</li>
+                            <li class="py-[10px] px-[22px] hover:bg-[#e5e5e5]">English</li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+
+            <div class="menu items-center hidden md:flex">
+                <a href="/kandidat"><button class="text-sm font-bold text-primary leading-5 py-[6px] px-[12px] inline-block bg-transparent border border-solid border-primary rounded-[3px] min-w-[120px] cursor-pointer">Untuk Kandidat</button></a>
+                <a href="/login"><button class="text-sm font-bold text-white leading-5 text-center align-middle py-[6px] px-[12px] inline-block bg-primary border border-solid border-primary rounded-[3px] cursor-pointer ml-[8px]">Masuk</button></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <div class="mx-[16px]">
+            <p class="text-left text-[14px] leading-5 my-[30px] md:text-center">Apakah anda mencari pekerjaan? <a href="/job" class="text-[#005bb6] no-underline">Klik disini.</a></p>
+
+            <div class="max-w-xl bg-white mx-auto items-center rounded-[8px] shadow-lg">
+                <img src="./assets/images/img-register-hero-mobile-id-id.jpg" class="bg-cover w-full roun-t-[5px] rounded-r-[5px] block bg-no-repeat" alt="Banner"/>
+
+                <form>
+                <div class="pt-[30px] pr-[40px] pb-[5px] pl-[40px]">
+                    <h2 class="text-[16px] font-bold text-primary pb-[10px]">Daftarkan Perusahaanmu Di Sini</h2>
+                    <label for="email" class="block text-[16px] font-bold text-[#333333] mt-[5px] pb-[5px]">Email Login ID</label>
+                        <input type="email" id="email" class="w-full py-[8px] px-[12px] border-none rounded-[5px] inline-block cursor-text outline outline-[#d1d1d1] outline-[0.9px] box-border shadow-sm peer/email">
+                        <span class="text-rose-600 text-sm hidden peer-invalid/email:block"><i class="fa-solid fa-circle-exclamation"></i> Silahkan isi alamat email yang valid</span>                    
+                    <label for="name" class="block text-[16px] font-bold text-[#333333] mt-[18px] pb-[5px]">Nama</label>
+                        <input type="text" id="name"  class="w-full py-[8px] px-[12px] border-none rounded-[5px] inline-block cursor-text outline outline-[#d1d1d1] outline-[0.9px] box-border shadow-sm peer/name">
+                        <span class="text-rose-600 text-sm hidden peer-focus/name:block"><i class="fa-solid fa-circle-exclamation"></i> Silakan isi nama Anda</span>               
+                    <label for="phone" class="block text-[16px] font-bold text-[#333333] mt-[18px] pb-[5px]">Nomor HP</label>
+                        <input type="tel" id="phone" class="w-full py-[8px] px-[12px] border-none rounded-[5px] inline-block cursor-text outline outline-[#d1d1d1] outline-[0.9px] box-border shadow-sm peer">
+                        <span class="text-rose-600 text-sm hidden peer-focus:block"><i class="fa-solid fa-circle-exclamation"></i> Silakan isi nomor kontak yang dapat dihubungi dengan angka (0-9)</span>
+                    <label for="bussiness-name" class="block text-[16px] font-bold text-[#333333] mt-[18px] pb-[5px]">Nama Bisnis Terdaftar</label>
+                        <input type="text" id="bussiness" placeholder="Sama seperti dokumen pendirian perusahaan" class="w-full py-[8px] px-[12px] border-none rounded-[5px] inline-block cursor-text outline outline-[#d1d1d1] outline-[0.9px] box-border shadow-sm placeholder-[#d1d1d1] peer/bussiness">
+                        <span class="text-rose-600 text-sm hidden peer-focus/bussiness:block"><i class="fa-solid fa-circle-exclamation"></i> Silakan isi nama perusahaan Anda</span>                    
+                    <div class="flex mt-[18px] pb-[5px] justify-between">
+                        <label for="password" class="text-[16px] font-bold text-[#333333]">Kata Sandi</label>
+                        <a class="text-[14px] text-[#666666] cursor-pointer" id="unhide"><i class="fa-solid fa-eye"></i> Tampilkan</a>
+                    </div>                        
+                        <input type="password" id="password" class="w-full py-[8px] px-[12px] border-none rounded-[5px] inline-block cursor-text outline outline-[#d1d1d1] outline-[0.9px] box-border shadow-sm peer" onkeyup="checkPassword(this.value)">
+                        <div class="validation my-2 hidden peer-focus:block">
+                            <span class="text-sm text-[#666666]/70">Minimal dari:</span>
+                            <li class="font-bold text-sm text-[#666666]/70 ml-2 list-none">
+                                <ul id="length"><i class="fa-solid fa-minus"></i> 8 karakter</ul>
+                                <ul id="upper"><i class="fa-solid fa-minus"></i> 1 huruf besar</ul>
+                                <ul id="lower"><i class="fa-solid fa-minus"></i> 1 huruf kecil</ul>
+                                <ul id="numb"><i class="fa-solid fa-minus"></i> 1 angka</ul>
+                            </li>
+                        </div>     
+                    
+                    <button type="submit" class="text-white text-[16px] w-full bg-[#e60278] mt-4 py-2 px-3 border-none rounded-[5px] cursor-pointer">Daftar</button>
+                    <p class="text-sm leading-[18px] text-left my-6">Dengan melanjutkan, Anda telah menyetujui <a href="#" class="text-[#298eb9] no-underline">Kebijakan Privasi</a> dan <a href="#" class="text-[#298eb9] no-underline">Syarat & Ketentuan</a> dari JobStreet.</p>
+                </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white block mt-[70px]">
+        <div class="mx-auto py-[20px] px-[15px] md:flex md:mx-[100px] lg:mx-[175px]">
+            <a href="#" class="block text-[#929292] text-sm leading-5 no-underline mt-[10px] text-center md:mr-[10px]">Tentang JobStreet.com</a>
+            <a href="#" class="block text-[#929292] text-sm leading-5 no-underline mt-[10px] text-center md:mr-[10px]">Syarat Penggunaan</a>
+            <a href="#" class="block text-[#929292] text-sm leading-5 no-underline mt-[10px] text-center md:mr-[10px]">Kebijakan Privasi</a>
+        </div>
+    </footer>
+
+
+
+
+    <div class="hidden bg-primary w-[400px] fixed bottom-[15%] right-[2%] rounded-2xl shadow-md" id="bubbleChat">
+        <div class="flex items-center justify-between mx-7 mt-10 mb-32 gap-7">
+            <div class="w-32">
+                <img src="./assets/images/chat-logo.png" alt="">
+            </div>
+            <div class="flex items-center">
+                <img class="w-9 -ml-3 rounded-full" src="https://randomuser.me/api/portraits/men/19.jpg" alt="">
+                <img class="w-9 -ml-3 rounded-full" src="https://randomuser.me/api/portraits/men/17.jpg" alt="">
+                <img class="w-9 -ml-3 rounded-full" src="https://randomuser.me/api/portraits/men/67.jpg" alt="">
+                <img class="w-9 -ml-3 rounded-full" src="https://randomuser.me/api/portraits/men/89.jpg" alt="">
+            </div>
+        </div>
+        <div class="bg-white py-24 rounded-b-2xl shadow-md">
+            <div class="fixed bg-white w-[367px] -mt-[200px] rounded-md mx-4 px-4 py-5 shadow-md">
+                <span class="block text-lg font-bold mb-3">Mulai Percakapan</span>
+                <input type="text" placeholder="Hai, saya ingin..." class="border text-sm w-full rounded-md px-2 py-3">
+                <i class="fa-solid fa-paper-plane fixed bg-primary text-white py-1 px-1 ml-[300px] -mt-9 rounded block cursor-pointer"></i>
+
+                <span class="block text-lg font-bold mt-7 mb-3">Hubungi kami di channel favorit Anda</span>
+                <button class="border flex text-sm text-left w-full rounded-md px-2 py-1 items-center"><i class="fa-brands fa-square-whatsapp text-green-500 text-3xl mr-2"></i> WhatsApp</button>
+            </div>
+        </div>            
+    </div>
+    <div class="fixed bg-primary p-[8px] rounded-[10px] bottom-[5%] right-[2%] cursor-pointer" id="bubble" onclick="">        
+        <img src="./assets/images/chat.png" alt="Live Chat" width="45px">
+    </div>
+
+    <script src="./assets/js/regist-employer.js"></script>
+</body>
+
+<script>
+    const input = document.querySelector("#phone");        
+    const phoneInput = window.intlTelInput(input, {
+        initialCountry: "id",
+        separateDialCode: true,
+    });
+    
+  </script>
+</html>
