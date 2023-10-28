@@ -67,6 +67,6 @@ bubble.addEventListener('click', function() {
     bubble.innerHTML = '<i class="fa-solid fa-xmark text-white text-4xl mx-3 my-1"></i>';
     bubbleChat.classList.toggle('hidden');
     bubble.addEventListener("click", () => {
-        bubble.innerHTML = '<img src="./assets/images/chat.png" alt="Live Chat" width="45px">';
+        bubble.innerHTML = '<img src="/assets/images/chat.png" alt="Live Chat" width="45px">';
   });
 });
