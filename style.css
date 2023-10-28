@@ -93,3 +93,8 @@ body {
 .valid {
   color: #63b208;
 }
+
+#hamburger:checked ~ label .btn-cancel {
+  margin-left: 250px;
+  margin-top: -5px;
+}
