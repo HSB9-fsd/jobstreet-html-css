@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/images/logo_title.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="/assets/images/logo_title.png">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
     <script src="https://cdn.tailwindcss.com"></script>    
@@ -28,9 +28,10 @@
     <header class="z-[1050] bg-white fixed w-full box-border transform-none transition-all duration-0 ease-in-out shadow-lg h-16 pt-3">
         <div class="mx-[8px] flex justify-between md:mx-[100px] lg:mx-[175px]">
             <div class="flex items-center">
-                <input type="checkbox" id="hamburger" class="hidden">
+                <input type="checkbox" id="hamburger" class="hidden peer">
                 <label for="hamburger" class="mr-8 mb-8 px-[10px] lg:hidden cursor-pointer" id="hamburger">
                     <i class="fa-solid fa-bars text-[#cfcfcf] text-3xl fixed" id="btn"></i>
+                    <i class="fa-solid fa-xmark btn-cancel text-[#cfcfcf] text-2xl fixed z-[1051] -ml-60 transition-all duration-500 ease-in-out peer-checked-[#hamburger]:ml-60 peer-checked-[#hamburger]:-mt-[5px]"></i>
                 </label>
                 <div class="inline">
                     <a href="/"><img src="/assets/images/logos.png" alt="Logo" width="200px"></a>
@@ -94,6 +95,7 @@
                         <span class="text-[16px] font-bold">Hubungi kami</span>
                     </div>
                 </div>
+                <!-- End of Sidebar -->
             </div>
 
             <div class="menu items-center hidden md:flex">
@@ -102,6 +104,7 @@
             </div>
         </div>
     </header>
+    <!-- End of Navbar -->
 
     <!-- Main Content -->
     <main class="pt-16">
@@ -109,7 +112,7 @@
             <p class="text-left text-[14px] leading-5 my-[30px] md:text-center">Apakah anda mencari pekerjaan? <a href="/job" class="text-[#005bb6] no-underline">Klik disini.</a></p>
 
             <div class="max-w-xl bg-white mx-auto items-center rounded-[8px] shadow-lg">
-                <img src="./assets/images/img-register-hero-mobile-id-id.jpg" class="bg-cover w-full roun-t-[5px] rounded-r-[5px] block bg-no-repeat" alt="Banner"/>
+                <img src="/assets/images/img-register-hero-mobile-id-id.jpg" class="bg-cover w-full roun-t-[5px] rounded-r-[5px] block bg-no-repeat" alt="Banner"/>
 
                 <form>
                 <div class="pt-[30px] pr-[40px] pb-[5px] pl-[40px]">
@@ -148,6 +151,7 @@
             </div>
         </div>
     </main>
+    <!-- End of Main Content -->
 
     <!-- Footer -->
     <footer class="bg-white block mt-[70px]">
@@ -157,6 +161,7 @@
             <a href="#" class="block text-[#929292] text-sm leading-5 no-underline mt-[10px] text-center md:mr-[10px]">Kebijakan Privasi</a>
         </div>
     </footer>
+    <!-- End of footer -->
 
     <!-- Bubble Chat -->
     <div class="hidden bg-primary w-[400px] fixed bottom-[15%] right-[2%] rounded-2xl shadow-md" id="bubbleChat">
@@ -183,11 +188,11 @@
         </div>            
     </div>
     <div class="fixed bg-primary p-[8px] rounded-[10px] bottom-[5%] right-[2%] cursor-pointer" id="bubble" onclick="">        
-        <img src="./assets/images/chat.png" alt="Live Chat" width="45px">
+        <img src="/assets/images/chat.png" alt="Live Chat" width="45px">
     </div>
 
     <!-- Script Internal -->
-    <script src="./assets/js/regist-employer.js"></script>
+    <script src="/assets/js/regist-employer.js"></script>
 </body>
 
 <!-- Script Country Code Phone -->
